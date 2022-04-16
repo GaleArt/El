@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Невероятный калькулятор</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="space">
+      <span></span><span></span><span></span>
+      <div class="comet"><div class="comet-inner"></div></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="calculator">
+      <h2 class="calcTitle">Кулькулятор Rиз</h3>
+      <div class="description">U общ.</div>
+      <input
+      type="number"
+      placeholder="Напряжение общее"
+      id="voltage-full"
+      class="input"
+      />
+      <div class="description">R пр</div>
+      <input
+      type="number"
+      placeholder="R прибора"
+      id="resist-pr"
+      class="input"
+      />
+      <div  class="description">U+</div>
+      <input
+      type="number"
+      placeholder="Напряжение на +"
+      id="voltage-plus"
+      class="input"
+      />
+      <div  class="description">U-</div>
+      <input
+      type="number"
+      placeholder="Напряжение на -"
+      id="voltage-minus"
+      class="input"
+      />
+      <h3 class="calcTitle">Результаты Rиз:</h3>
+      <div  class="description">Rиз на +</div>
+      <input
+      type="number"
+      id="total-plus"
+      class="input"
+      value="0"
+      />
+      <div  class="description">Rиз общ</div>
+      <input
+      type="number"
+      id="total-all"
+      class="input"
+      value="0"
+      />
+      <div  class="description">Rиз на -</div>
+      <input
+      type="number"
+      id="total-minus"
+      class="input"
+      value="0"
+      />
+    </div>
+    </div>
+    <div class="calculator">
+      <h3 class="calcTitle">Кулькулятор суточной утечки</h3>
+
+    </div>
+  </div>
+
+
+
+
+    <div class="calc-box2">
+      <div class="d1">Расчет суточной утечки Н2</div>
+      <div>Время, ч</div>
+      <input
+      type="number"
+      placeholder="xfcs"
+      id="h2test-time"
+      class="input"
+      />
+      <div>ч.</div>
+
+      <div>Рн</div>
+      <input
+      type="number"
+      placeholder="da"
+      id="h2pressure-begin"
+      class="input"
+      />
+      <div>кгс/см²</div>
+      <div>Рк</div>
+      <input
+      type="number"
+      placeholder="вф"
+      id="h2pressure-end"
+      class="input"
+      />
+      <div>кгс/см²</div>
+
+      <div>Тн</div>
+      <input
+      type="number"
+      placeholder="фп"
+      id="h2temperature-begin"
+      class="input"
+      />
+      <div>℃</div>
+
+      <div>Тк</div>
+      <input
+      type="number"
+      placeholder="фыа"
+      id="h2temperature-end"
+      class="input"
+      />
+      <div>℃</div>
+
+      <div  class="d2">Результаты утечки:</div>
+      <div>Утечка</div>
+      <input
+      type="number"
+      id="h2leak-m"
+      class="input"
+      value="0"
+      />
+      <div>м³</div>
+
+      <div>Утечка</div>
+      <input
+      type="number"
+      id="h2leak-p"
+      class="input"
+      value="0"
+      />
+      <div>%</div>
+    </div>
+    <div class="calc-box1"><div></div>Перевод величин</div>
+  </div>
+  <script src="calculators.js"></script>
+</body>
+</html>
