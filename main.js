@@ -4,7 +4,11 @@ const path = require('path')
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 480,
+    titleBarStyle: 'hidden', // чтобы включить 'true'
+    titleBarOverlay: {
+    color: '#2E2D4D',
+    symbolColor: '#74b1be'},
     icon: __dirname + "/icons/icon.png",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
