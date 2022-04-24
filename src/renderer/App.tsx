@@ -6,24 +6,24 @@ import { Home } from '../pages/home/home';
 import { Calendar } from '../pages/calendar/calendar';
 import { Todo } from '../pages/todo/todo';
 import { Reminder } from '../pages/reminder/reminder';
-import { Calculators } from '../pages/calculators/calculators';
+import { Detour } from '../pages/detour/detour';
 
 export default function App() {
   return (
     <>
       <header>
-        <Link to="/"><img src="./home.png"/></Link>
+        <Link to="/"><img src="./calculators.png"/></Link>
         <Link to="/calendar"><img src="./calendar.png"/></Link>
         <Link to="/todo"><img src="./todo.png"/></Link>
         <Link to="/reminder"><img src="./reminder.png"/></Link>
-        <Link to="/calculators"><img src="./calculators.png"/></Link>
+        <Link to="/detour"><img src="./detour.png"/></Link>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="calendar" element={<Calendar />} />
         <Route path="todo" element={<Todo />} />
         <Route path="reminder" element={<Reminder />} />
-        <Route path="calculators" element={<Calculators />} />
+        <Route path="detour" element={<Detour />} />
       </Routes>
     <div class="scene">
   	  <div class="space">
