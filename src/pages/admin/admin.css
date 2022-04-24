@@ -1,0 +1,7 @@
+.admin-form {
+  display: grid;
+  grid-template-columns: 75px 1fr 75px;
+  padding: 1em;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px
+}
