@@ -1,6 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100%;
+  font-family: "Rosatom", sans-serif;
 	background-color: #2E2D4D;
   font-size: 18px;
   color: white;
@@ -250,4 +254,84 @@ img:hover {
       transform: translateX(-200vw);
     }
   }
+}
+
+@font-face {
+  font-family: "Rosatom";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Rosatom"),
+  url("../../public/fonts/RST45.woff") format("woff");
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 35px;
+}
+
+.calculator {
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #74b1be;
+}
+
+.calcTitle {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.padding {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+}
+
+.description {
+  padding-right: 5px;
+  width: 20%;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.unit {
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.specialist {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 50%;
+}
+
+input[type=number] {
+  outline: 0 !important;
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+  text-align: center;
 }
